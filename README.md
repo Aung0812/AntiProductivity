@@ -22,5 +22,5 @@ Before you start, you will need:
 ## Usage
 To run the application, use the following command in your terminal:
 ```shell
-python .\listener.py <YOUR_API_KEY>
+python .\listener.py <YOUR_API_KEY> <word_list_csv>
 
