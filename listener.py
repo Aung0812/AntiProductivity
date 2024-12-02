@@ -1,13 +1,25 @@
 import keyboard
 import sys
+import csv
 from time import sleep
 from open_video import open_random_video
 
+if len(sys.argv) < 3:
+    print("Usage: script.py <API_KEY> <word_list>")
+    sys.exit(1)
+
 API_KEY = sys.argv[1]
+
+word_list_file = sys.argv[2]
+
+word_list = []
+with open(word_list_file, 'r') as file:
+    reader = csv.reader(file)
+    for row in reader:
+        word_list.append(row[0])
 
 typed_text = ""
 last_key = None
-word_list = ['def', 'int', 'str', 'func', 'float', 'print', 'true', 'false', 'log', "if", "for", "while"]
 
 def check_for_words():
     global typed_text
