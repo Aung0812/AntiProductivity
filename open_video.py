@@ -19,4 +19,4 @@ def open_random_video(API_KEY):
 
     for data in results['items']:
         videoId = (data['id']['videoId'])
-        webbrowser.open(f"youtube.com/watch?v={videoId}")
+        webbrowser.open(f"https://www.youtube.com/watch?v={videoId}")
