@@ -1,5 +1,4 @@
 # AntiProductivity
-Apart of the brainrot jia.seed hackathon.
 
 ## Description
 Programmers love to be productive. WELL, I DON'T LIKE THAT. **AntiProductivity** is meant to help you get as little work done as possible by opening a random YouTube video every time you type a word defined in the word list.
